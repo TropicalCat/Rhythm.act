@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameFrameWork/BattleSystem/BattleSystem.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GE/Module/Framework/ServiceModule.cs" Line="5" Column="5" />
+      <File FileName="Assets/Scripts/GameFrameWork/Game/GameManager.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/GameFrameWork/BattleSystem/BattleSystem.cs" Line="47" Column="66" />
+      <File FileName="Assets/Scripts/GameFrameWork/DataProviderSystem/RhythmConfigProvider.cs" Line="50" Column="41" />
+      <File FileName="Assets/Scripts/GameFrameWork/GameMain.cs" Line="25" Column="35" />
+      <File FileName="Assets/Scripts/GameFrameWork/Module/BattleModule.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/GameFrameWork/Game/AudioManager.cs" Line="30" Column="30" />
+      <File FileName="Assets/Scripts/GE/UI/Framework/UIManager.cs" Line="75" Column="25" />
+      <File FileName="Assets/Scripts/GE/UI/Framework/UIRoot.cs" Line="91" Column="36" />
+      <File FileName="Assets/Scripts/GameFrameWork/kk.cs" Line="5" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
