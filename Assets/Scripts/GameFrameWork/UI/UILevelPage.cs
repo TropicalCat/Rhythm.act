@@ -7,26 +7,19 @@ using GE;
 
 namespace GFW
 {
-	public class UIHomePage :  UIPage 
+	public class UILevelPage : UIPage  
 	{
-		[SerializeField]
-		private Button m_btnStart;
+
 
 		protected override void OnOpen(object arg = null)
 		{
 			base.OnOpen (arg);
-			if (m_btnStart != null)
-			{
-				m_btnStart.onClick.AddListener(OnStart);
-			}
+
 		}
 
 		protected override void OnClose(object arg = null)
 		{
-			if (m_btnStart != null)
-			{
-				m_btnStart.onClick.RemoveAllListeners();
-			}
+			
 			base.OnClose (arg);
 		}
 
@@ -34,12 +27,7 @@ namespace GFW
 		{
 			AudioManager.Instance.PlayClick ();
 
-			//BattleSystem.Instance.InitBattle ();
 
-			ModuleManager.Instance.ShowModule (ModuleDef.LevelModule);
 		}
-			
-
 	}
 }
-
