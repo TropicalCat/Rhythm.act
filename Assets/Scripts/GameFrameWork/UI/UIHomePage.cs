@@ -34,9 +34,9 @@ namespace GFW
 		{
 			AudioManager.Instance.PlayClick ();
 
-			//BattleSystem.Instance.InitBattle ();
+			BattleSystem.Instance.InitBattle ();
 
-			ModuleManager.Instance.ShowModule (ModuleDef.LevelModule);
+			//ModuleManager.Instance.ShowModule (ModuleDef.LevelModule);
 		}
 			
 

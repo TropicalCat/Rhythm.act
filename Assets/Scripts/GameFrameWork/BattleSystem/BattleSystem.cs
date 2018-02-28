@@ -30,19 +30,36 @@ namespace GFW
 			List<RhythmConfig> shythmCfgs = RhythmConfigProvider.Instance.GetAllData ();
 
 
-			GameObject BattleRoot = new GameObject();
-			BattleRoot.name = "BattleRoot";
-			BattleRoot.transform.SetParent (null, false);
+			GameObject battleRoot = new GameObject();
+			battleRoot.name = "BattleRoot";
+			battleRoot.transform.SetParent (null, false);
 			//GameObject root = GameObject.Find ("Main");
 
+			kk kkObj = battleRoot.AddComponent<kk>();
 
 
 
-			kk kkObj = BattleRoot.AddComponent<kk>();
-			GameObject BattleRoot1 = new GameObject();
-			BattleRoot1.name = "BattleRoot";
+			GameObject ballRoot = new GameObject();
+			ballRoot.name = "BallRoot";
+			ballRoot.transform.SetParent (battleRoot.transform, false);
 
-			BattleRoot1.transform.SetParent (BattleRoot.transform, false);
+			GameObject ball =  Resources.Load ("Prefab/ball") as GameObject;
+
+			GameObject ballCopy = GameObject.Instantiate (ball);
+
+
+			//GameObject ballCopy =  ball.transform as GameObject;
+			ballCopy.transform.SetParent (ballRoot.transform, false);
+
+
+			SpriteRenderer sp = ballCopy.GetComponent<SpriteRenderer> ();
+			//sp.sprite = ;
+
+
+
+			Texture2D texture = Resources.Load ("Texture/ball/duck") as Texture2D;
+
+			sp.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
 
 
 		}
