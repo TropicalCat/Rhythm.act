@@ -44,23 +44,25 @@ namespace GFW
 			ballRoot.transform.SetParent (battleRoot.transform, false);
 
 			GameObject ball =  Resources.Load ("Prefab/ball") as GameObject;
-
 			GameObject ballCopy = GameObject.Instantiate (ball);
-
-
-			//GameObject ballCopy =  ball.transform as GameObject;
 			ballCopy.transform.SetParent (ballRoot.transform, false);
 
 
 			SpriteRenderer sp = ballCopy.GetComponent<SpriteRenderer> ();
-			//sp.sprite = ;
-
-
-
 			Texture2D texture = Resources.Load ("Texture/ball/duck") as Texture2D;
-
 			sp.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
 
+
+
+			GameObject hand = Resources.Load ("Prefab/animation/chopsticks") as GameObject;
+			GameObject handCopy = GameObject.Instantiate (hand);
+			handCopy.transform.SetParent (battleRoot.transform, false);
+			Animator ani = handCopy.GetComponent<Animator> ();
+			if (null != ani) 
+			{
+				ani.Play ("Exit");
+				//ani.StopPlayback ();
+			}
 
 		}
 
